@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucid ASH | EPK</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Syne:wght@400;700;800&display=swap');
+
+      :root {
+        --accent: #00f2ff;
+      }
+
+      body {
+        background-color: #050505;
+        color: #ffffff;
+        font-family: 'Inter', sans-serif;
+        overflow-x: hidden;
+      }
+
+      h1, h2, h3, .font-syne {
+        font-family: 'Syne', sans-serif;
+      }
+
+      .text-accent {
+        color: var(--accent);
+      }
+
+      .bg-accent {
+        background-color: var(--accent);
+      }
+
+      .border-accent {
+        border-color: var(--accent);
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #222;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--accent);
+      }
+
+      @media (pointer: fine) {
+        body {
+          cursor: none;
+        }
+        a, button, select, input, textarea {
+          cursor: none;
+        }
+      }
+
+      .grain {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 9999;
+        opacity: 0.05;
+        background-image: url('https://grainy-gradients.vercel.app/noise.svg');
+      }
+
+      .text-outline {
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+      }
+
+      @keyframes typing-dot {
+        0%, 60%, 100% { opacity: 0.3; }
+        30% { opacity: 1; }
+      }
+
+      .typing-dot:nth-child(1) { animation: typing-dot 1.4s infinite; }
+      .typing-dot:nth-child(2) { animation: typing-dot 1.4s 0.2s infinite; }
+      .typing-dot:nth-child(3) { animation: typing-dot 1.4s 0.4s infinite; }
+
+      @keyframes pulse-subtle {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+      }
+
+      .animate-pulse-subtle {
+        animation: pulse-subtle 2s ease-in-out infinite;
+      }
+
+      @keyframes progress {
+        0% { width: 0%; }
+        100% { width: 70%; }
+      }
+
+      .animate-progress {
+        animation: progress 1.5s ease-out forwards;
+      }
+
+      @keyframes fade-in-1 {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fade-in-2 {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fade-in-3 {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fade-in-4 {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+
+      .animate-fade-in-1 { animation: fade-in-1 0.5s ease-out forwards; }
+      .animate-fade-in-2 { animation: fade-in-2 0.5s 0.1s ease-out forwards; }
+      .animate-fade-in-3 { animation: fade-in-3 0.5s 0.2s ease-out forwards; }
+      .animate-fade-in-4 { animation: fade-in-4 0.5s 0.3s ease-out forwards; }
+    </style>
+  </head>
+  <body>
+    <div class="grain"></div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
