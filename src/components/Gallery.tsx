@@ -4,22 +4,22 @@ import { motion } from 'framer-motion';
 const Gallery: React.FC = () => {
   const images = [
     {
-      url: "/images/screenshot-2026-02-06-at-24042-am.png",
+      url: "/images/hero-bg.webp",
       span: "md:col-span-2 md:row-span-2",
       title: "THE LOOK"
     },
     {
-      url: "/images/images.jpeg",
+      url: "/images/sonic-frequencies.webp",
       span: "md:col-span-1 md:row-span-1",
       title: "SONIC FREQUENCIES"
     },
     {
-      url: "/images/hq720.jpg",
+      url: "/images/visual-narrative.webp",
       span: "md:col-span-1 md:row-span-1",
       title: "VISUAL NARRATIVE"
     },
     {
-      url: "/images/03302837-dd6f-40b1-b790-7561fc11d262.png",
+      url: "/images/lucid-moments.webp",
       span: "md:col-span-2 md:row-span-1",
       title: "LUCID MOMENTS"
     }
@@ -51,6 +51,7 @@ const Gallery: React.FC = () => {
               <img
                 src={img.url}
                 alt={img.title}
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110 grayscale group-hover:grayscale-0"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">

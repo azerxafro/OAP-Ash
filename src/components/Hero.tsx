@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
         className="absolute inset-0 z-0"
       >
         <img
-          src="/images/screenshot-2026-02-06-at-24042-am.png"
+          src="/images/hero-bg.webp"
           alt="Lucid ASH"
           className="w-full h-full object-cover grayscale opacity-30"
         />

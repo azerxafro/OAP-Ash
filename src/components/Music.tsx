@@ -76,24 +76,28 @@ const Music: React.FC = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-3">
                   <div className="aspect-video bg-white/5 relative group overflow-hidden">
-                    <img src="https://img.youtube.com/vi/ZWvMZM5A18o/maxresdefault.jpg" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
-                    <a href="https://www.youtube.com/watch?v=ZWvMZM5A18o" target="_blank" className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-12 h-12 rounded-full bg-[#00f2ff] text-black flex items-center justify-center pl-1">
-                        <Play fill="currentColor" size={20} />
-                      </div>
-                    </a>
+                    <iframe
+                      src="https://www.youtube.com/embed/ZWvMZM5A18o"
+                      title="LOW LOVE (OFFICIAL VIDEO)"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full border-0"
+                    />
                   </div>
                   <p className="text-xs font-bold tracking-widest">LOW LOVE (OFFICIAL VIDEO)</p>
                 </div>
 
                 <div className="space-y-3">
                   <div className="aspect-video bg-white/5 relative group overflow-hidden">
-                    <img src="https://img.youtube.com/vi/-TCS0ohFOzc/maxresdefault.jpg" className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity" />
-                    <a href="https://www.youtube.com/watch?v=-TCS0ohFOzc" target="_blank" className="absolute inset-0 flex items-center justify-center">
-                      <div className="w-12 h-12 rounded-full bg-red-600 text-white flex items-center justify-center pl-1">
-                        <Play fill="currentColor" size={20} />
-                      </div>
-                    </a>
+                    <iframe
+                      src="https://www.youtube.com/embed/-TCS0ohFOzc"
+                      title="UYIRE ENNAI VITTU SENDRAYE"
+                      loading="lazy"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      className="w-full h-full border-0"
+                    />
                   </div>
                   <p className="text-xs font-bold tracking-widest">UYIRE ENNAI VITTU SENDRAYE</p>
                 </div>

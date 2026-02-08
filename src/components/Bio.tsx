@@ -87,7 +87,7 @@ const Bio: React.FC = () => {
 
           <div className="space-y-4">
             <div className="aspect-video bg-white/5 overflow-hidden relative group">
-              <img src="/images/03302837-dd6f-40b1-b790-7561fc11d262.png" alt="Lucid ASH Rebirth" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
+              <img src="/images/lucid-moments.webp" alt="Lucid ASH Rebirth" loading="lazy" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
               <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
                 <span className="text-[10px] font-bold tracking-[0.5em]">CAME ALIVE ON STAGE</span>
               </div>
