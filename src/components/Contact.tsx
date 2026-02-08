@@ -26,11 +26,11 @@ const Contact: React.FC = () => {
             </p>
 
             <div className="space-y-6">
-              <a href="mailto:hello@lucidash.com" className="flex items-center gap-4 group">
+              <a href="mailto:ashwinazer@monadelta.com" className="flex items-center gap-4 group">
                 <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center group-hover:border-[#00f2ff] group-hover:text-[#00f2ff] transition-all">
                   <Mail size={20} />
                 </div>
-                <span className="text-xl font-bold tracking-tight">hello@lucidash.com</span>
+                <span className="text-xl font-bold tracking-tight">ashwinazer@monadelta.com</span>
               </a>
 
               <a href="https://monadelta.me" target="_blank" className="flex items-center gap-4 group">
