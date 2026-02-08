@@ -24,4 +24,4 @@ jobs:
       - name: Notify Vercel
         uses: vercel/repository-dispatch/actions/status@v1
         with:
-          name: Vercel - epk: gitlint
+          name: "Vercel - epk: gitlint"
