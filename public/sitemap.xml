@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://ashwinazer.rocks/</loc>
+        <loc>https://press.ashwinazer.rocks/</loc>
         <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://ashwinazer.rocks/#story</loc>
+        <loc>https://press.ashwinazer.rocks/#story</loc>
         <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://ashwinazer.rocks/#sound</loc>
+        <loc>https://press.ashwinazer.rocks/#sound</loc>
         <lastmod>2026-02-08</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://ashwinazer.rocks/#gallery</loc>
+        <loc>https://press.ashwinazer.rocks/#gallery</loc>
         <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://ashwinazer.rocks/#book</loc>
+        <loc>https://press.ashwinazer.rocks/#book</loc>
         <lastmod>2026-02-08</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
