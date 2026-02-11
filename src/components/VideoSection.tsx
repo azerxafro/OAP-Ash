@@ -276,11 +276,14 @@ const VideoSection = () => {
               {/* Video Embed */}
               <div className="aspect-video rounded-xl overflow-hidden bg-black">
                 <iframe
-                  src={`https://www.youtube.com/embed/${selectedVideo.id}?autoplay=1&rel=0`}
+                  src={`https://www.youtube.com/embed/${selectedVideo.id}?autoplay=1&rel=0&modestbranding=1`}
                   title={selectedVideo.title}
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowFullScreen
-                  className="w-full h-full"
+                  loading="lazy"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  className="w-full h-full border-0"
                 />
               </div>
 

@@ -52,6 +52,8 @@ const MainContent: React.FC = () => {
       <SEO />
       <CustomCursor />
 
+      <CustomCursor />
+      
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 origin-left z-50"
         style={{ scaleX, backgroundColor: artist.theme.primaryColor }}
