@@ -15,9 +15,9 @@ export const lucidAshData: ArtistData = {
     gradientTo: '#C4A77D' // Sepia/tan
   },
   seo: {
-    title: 'Ashwin Azer | Official Website - Music, Videos & More',
-    description: 'Official website of Ashwin Azer (Lucid ASH). Contemporary R&B and melodic Hip-Hop artist. Stream DESTINY, watch music videos, and stay updated.',
-    keywords: ['Ashwin Azer', 'Lucid ASH', 'DESTINY', 'Monadelta', 'Contemporary R&B', 'Hip-Hop', 'Indian Artist', 'Music Producer'],
+    title: 'Ashwin Azer – Official EPK | Electronic Press Kit',
+    description: 'Official Electronic Press Kit for Ashwin Azer. Contemporary R&B meets melodic Hip-Hop. Producer, artist, and founder of Monadelta Productions. Press photos, biography, discography, and contact information.',
+    keywords: ['Ashwin Azer', 'EPK', 'Electronic Press Kit', 'Press Kit', 'Music Press', 'R&B Artist', 'Hip Hop Producer', 'Monadelta', 'Booking', 'Management'],
     ogImage: '/images/og-image.jpg'
   },
   content: {

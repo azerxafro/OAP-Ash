@@ -1,34 +1,20 @@
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, ReactNode } from 'react';
 import { ArtistData } from '../types/content';
 import { lucidAshData } from '../data/lucidAsh';
-import { ashwinAzerData } from '../data/ashwinAzer';
 
 interface ArtistContextType {
   artist: ArtistData;
-  setArtist: (artist: ArtistData) => void;
 }
 
 const ArtistContext = createContext<ArtistContextType | undefined>(undefined);
 
 export const ArtistProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [artist, setArtist] = useState<ArtistData>(lucidAshData);
-
-  useEffect(() => {
-    const hostname = window.location.hostname;
-    // Simple logic: if hostname contains 'ashwinazer.rocks' and NOT 'press.', switch to Ashwin Azer
-    // Or if we visit a specific route later. For now, domain based.
-    
-    // Check for 'ashwinazer.rocks' (production) or overrides
-    if (hostname === 'ashwinazer.rocks' || hostname === 'www.ashwinazer.rocks') {
-        setArtist(ashwinAzerData);
-    } else {
-        // Default to Lucid ASH (press.ashwinazer.rocks, localhost default, etc)
-        setArtist(lucidAshData);
-    }
-  }, []);
+  // EPK site always uses lucidAshData (press.ashwinazer.rocks)
+  // Artist site served from separate repo: azerxafro/artist-ashwinazer
+  const artist = lucidAshData;
 
   return (
-    <ArtistContext.Provider value={{ artist, setArtist }}>
+    <ArtistContext.Provider value={{ artist }}>
       {children}
     </ArtistContext.Provider>
   );

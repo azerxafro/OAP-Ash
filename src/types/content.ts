@@ -182,7 +182,7 @@ export interface ContactContent {
 }
 
 export interface ArtistData {
-  id: 'lucid-ash' | 'ashwin-azer';
+  id: string;
   name: string;
   legalName?: string; // For SEO
   domain: string;
