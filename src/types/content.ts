@@ -30,20 +30,33 @@ export interface AboutContent {
   monadeltaMention?: string;
 }
 
-/** New flat bio structure for mobile-first design */
-export interface BioStat {
-  value: string;
-  label: string;
-}
-
+/** Legacy bio structure for backwards compatibility */
 export interface BioContent {
-  headline: string;
-  shortBio: string;
-  fullBio: string; // Markdown/newline separated
-  images: string[];
-  pullQuote?: string;
+  title: string;
+  story: {
+    part1: {
+      title: string;
+      content: string;
+      highlight: string;
+    };
+    part2: {
+      content: string[];
+    };
+    part3: {
+      title: string;
+      content: string;
+    };
+  };
+  quote: string;
   quoteAttribution?: string;
-  stats?: BioStat[];
+  multimediaHint?: string;
+  sidebar: {
+    title: string;
+    content: string;
+    author: string;
+    image: string;
+    imageCaption: string;
+  };
 }
 
 /** Spotify/YouTube embed for music playback */
@@ -82,8 +95,6 @@ export interface YouTubeVideo {
   category: 'music-video' | 'lyric-video' | 'audio' | 'behind-the-scenes';
   year?: number;
   featured?: boolean;
-  isPlaylist?: boolean;
-  thumbnailUrl?: string; // Optional custom thumbnail for playlists
 }
 
 /** Music video with YouTube embed - legacy */
@@ -127,10 +138,9 @@ export interface MusicContent {
 
 export interface GalleryItem {
   url: string;
-  span?: string; // Optional legacy
-  title?: string;
+  span: string;
+  title: string;
   subtitle?: string;
-  caption?: string; // Added for new Gallery
   era?: string;
 }
 
@@ -163,16 +173,10 @@ export interface AltProfile {
   platform: string;
 }
 
-export interface ContactInfo {
-  name: string;
-  email: string;
-  phone?: string;
-}
-
 export interface ContactContent {
-  management: ContactInfo;
-  press?: ContactInfo;
+  email: string;
   socials: SocialLink[];
+  altProfiles?: AltProfile[];
   label?: LabelInfo;
   newsletter?: NewsletterContent;
 }

@@ -10,3 +10,4 @@ Crawl-delay: 1
 # Block common bot traps and development files
 Disallow: /node_modules/
 Disallow: /.git/
+Disallow: /.bolt/
