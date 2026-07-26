@@ -181,6 +181,23 @@ export interface ContactContent {
   newsletter?: NewsletterContent;
 }
 
+export interface PressReleaseItem {
+  id: string;
+  title: string;
+  dateline: string;
+  date: string;
+  summary?: string;
+  content: string[];
+  tags?: string[];
+  pdfUrl?: string;
+}
+
+export interface PressContent {
+  title: string;
+  description?: string;
+  releases: PressReleaseItem[];
+}
+
 export interface ArtistData {
   id: string;
   name: string;
@@ -206,6 +223,7 @@ export interface ArtistData {
     about?: AboutContent; // New short bio
     bio: BioContent; // Legacy full bio
     music: MusicContent;
+    press?: PressContent;
     gallery: GalleryContent;
     contact: ContactContent;
   };

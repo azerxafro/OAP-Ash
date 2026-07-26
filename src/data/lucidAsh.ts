@@ -184,6 +184,25 @@ export const lucidAshData: ArtistData = {
         }
       ]
     },
+    press: {
+      title: 'PRESS RELEASES',
+      description: 'Official announcements, press statements, and media releases from Ashwin Azer and MonaDelta.',
+      releases: [
+        {
+          id: 'monadelta-freedaw-announcement',
+          title: 'Coimbatore-Based Artist and Producer Ashwin Azer (Lucid ASH) Redefines Independent Music with MonaDelta and Custom Audio Tech',
+          dateline: 'COIMBATORE, TAMIL NADU',
+          date: 'JULY 2026',
+          summary: 'Ashwin Azer (Lucid ASH) pushes digital production boundaries, blending Contemporary R&B, Hip-Hop, and electronic influences while engineering FreeDAW under MonaDelta.',
+          content: [
+            'Multidisciplinary artist, music producer, and software developer Ashwin Azer—known professionally as Lucid ASH—is pushing the boundaries of modern digital production. At 23 years old, the founder of the independent record label MonaDelta has cultivated a highly distinct sonic identity, blending Contemporary R&B, melodic Hip-Hop, and heavy electronic influences.',
+            'Following the rollout of major projects like Destiny Disc 1 and expanding his global listener base with standout tracks such as "Lockin In" and "OG-13," Ashwin is establishing a resilient, artist-first ecosystem.',
+            'Operating at the dynamic intersection of technology and creativity, he produces his entire catalog in-house while simultaneously engineering FreeDAW, a local-first mobile audio workstation designed to empower the next generation of independent creators.'
+          ],
+          tags: ['MONADELTA', 'FREEDAW', 'DESTINY DISC 1', 'LOCKIN IN', 'OG-13', 'INDEPENDENT MUSIC']
+        }
+      ]
+    },
     contact: {
       email: 'contact@ashwinazer.rocks',
       socials: [

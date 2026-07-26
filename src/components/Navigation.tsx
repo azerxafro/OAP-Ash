@@ -23,6 +23,7 @@ const Navigation = () => {
   const navItems = [
     { name: 'MUSIC', href: '#music' },
     { name: 'VIDEOS', href: '#videos' },
+    { name: 'PRESS', href: '#press' },
     { name: 'GALLERY', href: '#gallery' },
     { name: 'CONTACT', href: '#contact' },
   ];

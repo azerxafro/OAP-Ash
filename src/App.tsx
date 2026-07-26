@@ -9,6 +9,7 @@ import Hero from './components/Hero';
 import Music from './components/Music';
 import Bio from './components/Bio';
 import Gallery from './components/Gallery';
+import PressRelease from './components/PressRelease';
 import Contact from './components/Contact';
 import Navigation from './components/Navigation';
 import SEO from './components/SEO';
@@ -62,6 +63,7 @@ const MainContent: React.FC = () => {
         <Hero />
         <Music />
         <Bio />
+        <PressRelease />
         <Gallery />
         <Contact />
       </main>
