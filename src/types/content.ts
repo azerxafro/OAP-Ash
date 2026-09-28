@@ -77,6 +77,11 @@ export interface Album {
   spotifyUrl: string;
   appleMusicUrl?: string;
   type: 'album' | 'single' | 'ep';
+  trackCount?: number;
+  highlightTracks?: string[];
+  status?: 'released' | 'upcoming';
+  releaseDate?: string;
+  subtitle?: string;
 }
 
 /** Upcoming release teaser */
@@ -85,6 +90,29 @@ export interface UpcomingRelease {
   year: number;
   description: string;
   type: 'album' | 'single' | 'ep';
+  releaseDate?: string;
+  trackCount?: number;
+  ctaText?: string;
+  presaveUrl?: string;
+  coverUrl?: string;
+}
+
+/** Official Recognition / Award Item */
+export interface AwardItem {
+  id: string;
+  title: string;
+  event: string;
+  category: string;
+  achievement: string;
+  organization: string;
+  year: number;
+  credentialId?: string;
+  certificateUrl?: string;
+  certificatePngUrl?: string;
+  pdfUrl?: string;
+  verifyUrl?: string;
+  signatories?: string[];
+  description: string;
 }
 
 /** YouTube video with metadata and category */
@@ -207,6 +235,7 @@ export interface ArtistData {
     primaryColor: string;
     secondaryColor: string;
     gradientTo?: string;
+    accentGlow?: string;
   };
   seo: {
     title: string;
@@ -224,6 +253,7 @@ export interface ArtistData {
     bio: BioContent; // Legacy full bio
     music: MusicContent;
     press?: PressContent;
+    awards?: AwardItem[];
     gallery: GalleryContent;
     contact: ContactContent;
   };

@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.5 }}
-                className="px-6 py-3 rounded-full border border-white/20 font-bold tracking-widest text-xs flex items-center gap-2"
+                className="px-6 py-3 rounded-full border border-white/20 font-bold tracking-widest text-xs flex items-center gap-2 bg-white/[0.04] backdrop-blur-md"
               >
                 <span 
                   className="w-2 h-2 rounded-full animate-pulse"
@@ -107,6 +107,24 @@ const Hero: React.FC = () => {
                 />
                 {hero.tagline}
               </motion.div>
+            )}
+
+            {artist.content.awards && artist.content.awards.length > 0 && (
+              <motion.a
+                href="#press"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.6 }}
+                className="px-5 py-3 rounded-full border font-bold tracking-widest text-xs flex items-center gap-2 transition-all hover:scale-105"
+                style={{
+                  borderColor: `${artist.theme.primaryColor}50`,
+                  backgroundColor: `${artist.theme.primaryColor}15`,
+                  color: '#ffffff'
+                }}
+              >
+                <span style={{ color: artist.theme.primaryColor }}>★</span>
+                <span>WALLMAG RAP AWARDS · TOP 250</span>
+              </motion.a>
             )}
           </div>
 

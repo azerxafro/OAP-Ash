@@ -2,7 +2,7 @@ import { ArtistData } from '../types/content';
 
 /**
  * Ashwin Azer / Lucid ASH - Official Artist Website Data
- * Premium global artist standard
+ * Premium global artist standard (Liquid Gold / Obsidian Cyber-Glassmorphic Trend)
  */
 export const lucidAshData: ArtistData = {
   id: 'lucid-ash',
@@ -10,33 +10,50 @@ export const lucidAshData: ArtistData = {
   legalName: 'Ashwin Ramesh',
   domain: 'ashwinazer.rocks',
   theme: {
-    primaryColor: '#D4AF37', // Muted gold
-    secondaryColor: '#0a0806', // Warm black
-    gradientTo: '#C4A77D' // Sepia/tan
+    primaryColor: '#F5C842', // Luminous Electric 24K Gold
+    secondaryColor: '#070709', // Deep cosmic obsidian
+    gradientTo: '#E2B338', // Warm champagne solar gradient
+    accentGlow: 'rgba(245, 200, 66, 0.18)'
   },
   seo: {
-    title: 'Ashwin Azer – Official EPK | Electronic Press Kit',
-    description: 'Official Electronic Press Kit for Ashwin Azer. Contemporary R&B meets melodic Hip-Hop. Producer, artist, and founder of Monadelta Productions. Press photos, biography, discography, and contact information.',
-    keywords: ['Ashwin Azer', 'EPK', 'Electronic Press Kit', 'Press Kit', 'Music Press', 'R&B Artist', 'Hip Hop Producer', 'Monadelta', 'Booking', 'Management'],
+    title: 'Ashwin Azer – Official EPK | THE AZER (Vol. 2) Releasing Oct 2',
+    description: 'Official website and Electronic Press Kit for Ashwin Azer (Lucid ASH). Stream DESTINY, Legends & Lovers, and THE AZER (Vol. 1). THE AZER (Vol. 2) arrives October 2, 2026 with 16 tracks. WallMag Rap Awards 2026 Top 250 Music Creator.',
+    keywords: [
+      'Ashwin Azer',
+      'Lucid ASH',
+      'THE AZER Vol. 2',
+      'THE AZER Vol. 1',
+      'Legends & Lovers',
+      'DESTINY album',
+      'WallMag Rap Awards 2026',
+      'WallMag Magazine',
+      'Top 250 Creators',
+      'Monadelta Productions',
+      'Contemporary R&B',
+      'Melodic Hip-Hop',
+      'Indian Hip Hop',
+      'Producer',
+      'EPK'
+    ],
     ogImage: '/images/og-image.jpg'
   },
   content: {
     hero: {
       artistName: 'ASHWIN AZER',
       subtitle: 'ARTIST · PRODUCER · FOUNDER',
-      tagline: 'DESTINY OUT NOW',
-      description: 'Contemporary R&B meets melodic Hip-Hop',
+      tagline: 'THE AZER (VOL. 2) · OCT 2 · 16 TRACKS',
+      description: 'Contemporary R&B meets melodic Hip-Hop. Creator of <em>DESTINY</em>, <em>Legends & Lovers</em>, and <em>THE AZER</em> series.',
       bgImage: '/images/hero-bg.webp',
       logoText: 'AZER',
       ctaText: 'Listen Now',
-      ctaLink: 'https://open.spotify.com/album/4eipwaoJfbKEuwdZdaORQT'
+      ctaLink: 'https://open.spotify.com/artist/6M1VSmwtcuwS1DnvXTGk7P'
     },
     about: {
-      headline: 'Two personas. One vision.',
+      headline: 'Two personas. One visionary sonic universe.',
       paragraphs: [
         'Ashwin Azer merges contemporary R&B with melodic Hip-Hop, crafting songs that explore the highs and lows of modern life. Known for raw, explicit truth as Ashwin Azer and emotive dreamscapes as Lucid ASH.',
-        'Founder of MONADELTA Productions — the artist-first collective built from the ashes of an industry that tried to erase him. His debut album DESTINY (2025) marks a sonic resurrection.',
-        'From DIY beats with a keypad phone as a microphone to founding an entire movement. The rebuild is complete.'
+        'Founder of MONADELTA Productions — the artist-first collective built from the ashes of an industry that tried to erase him. Following the comeback milestone DESTINY (2025) and the 2026 twin releases Legends & Lovers and THE AZER (Vol. 1), his independent catalog has earned global acclaim including Top 250 creator honors at the WallMag Rap Awards 2026.',
+        'From DIY beats with a keypad phone as a microphone to an expanding musical empire. The rebuild is complete, paving the way for the 16-track opus THE AZER (Vol. 2) releasing October 2, 2026.'
       ],
       images: ['/images/hero-bg.webp', '/images/sonic-frequencies.webp', '/images/lucid-moments.webp'],
       monadeltaMention: 'Distributed by Monadelta Productions'
@@ -57,7 +74,7 @@ export const lucidAshData: ArtistData = {
         },
         part3: {
           title: 'The Rebirth: MONADELTA',
-          content: 'From the ashes rose MONADELTA Productions—the artist-first collective he founded in 2024. With his debut album DESTINY (2025) featuring Wa\'Cali and Marabukavi, and the ambitious Legends & Lovers on the horizon for 2026, Ashwin Azer didn\'t just survive. He built an empire.'
+          content: 'From the ashes rose MONADELTA Productions—the artist-first collective he founded in 2024. With his debut album DESTINY (2025) featuring Wa\'Cali and Marabukavi, the released milestones Legends & Lovers and THE AZER (Vol. 1), and recognized among the Top 250 creators at the WallMag Rap Awards 2026, Ashwin Azer didn\'t just survive. He built an empire. The saga escalates with THE AZER (Vol. 2) dropping October 2, 2026 with 16 tracks.'
         }
       },
       quote: '"I picked up the mic, and the first note came out smooth and steady. The sound vibrated through the stage floor into my chest. I lowered my voice and I could hear people singing my own song back to me."',
@@ -96,17 +113,106 @@ export const lucidAshData: ArtistData = {
         type: 'spotify-album',
         url: 'https://open.spotify.com/embed/album/4eipwaoJfbKEuwdZdaORQT?utm_source=generator&theme=0',
         title: 'DESTINY',
-        subtitle: '11 TRACKS · 22:16 · 2025'
+        subtitle: '11 TRACKS · 22:16 · MONADELTA'
       },
       albums: [
         {
+          id: 'the-azer-vol-2',
+          title: 'THE AZER (Vol. 2)',
+          subtitle: '16 Tracks · Releasing October 2, 2026',
+          year: 2026,
+          releaseDate: 'October 2, 2026',
+          trackCount: 16,
+          status: 'upcoming',
+          coverUrl: '/images/cover-the-azer-vol-2.webp',
+          spotifyUrl: 'https://open.spotify.com/artist/6M1VSmwtcuwS1DnvXTGk7P',
+          appleMusicUrl: 'https://music.apple.com/us/artist/ashwin-azer/1497428225',
+          type: 'album'
+        },
+        {
+          id: 'the-azer-vol-1',
+          title: 'THE AZER (Vol. 1)',
+          subtitle: 'Studio Album · 2026 · Out Now',
+          year: 2026,
+          releaseDate: '2026',
+          status: 'released',
+          coverUrl: '/images/sonic-frequencies.webp',
+          spotifyUrl: 'https://open.spotify.com/artist/6M1VSmwtcuwS1DnvXTGk7P',
+          appleMusicUrl: 'https://music.apple.com/us/artist/ashwin-azer/1497428225',
+          highlightTracks: ['Azhagana maalai', 'Onnula di', 'Lockin In'],
+          type: 'album'
+        },
+        {
+          id: 'legends-and-lovers',
+          title: 'LEGENDS & LOVERS',
+          subtitle: 'Studio Album · 2026 · Out Now',
+          year: 2026,
+          releaseDate: '2026',
+          trackCount: 9,
+          status: 'released',
+          coverUrl: '/images/lucid-moments.webp',
+          spotifyUrl: 'https://open.spotify.com/artist/6M1VSmwtcuwS1DnvXTGk7P',
+          appleMusicUrl: 'https://music.apple.com/us/artist/ashwin-azer/1497428225',
+          highlightTracks: ['Thappu Panniten', '5 FEET', 'The Curse of GenZ', 'VELVET SKY', 'SOLD MY SOUL'],
+          type: 'album'
+        },
+        {
           id: 'destiny',
           title: 'DESTINY',
+          subtitle: '11 Tracks · 22:16 · Debut Album',
           year: 2025,
-          coverUrl: '/images/destiny-cover.webp',
+          releaseDate: 'December 21, 2025',
+          trackCount: 11,
+          status: 'released',
+          coverUrl: '/images/visual-narrative.webp',
           spotifyUrl: 'https://open.spotify.com/album/4eipwaoJfbKEuwdZdaORQT',
           appleMusicUrl: 'https://music.apple.com/album/destiny/1497428225',
+          highlightTracks: ['LOW LOVE', 'HUDA HOLA', 'DESTINY'],
           type: 'album'
+        },
+        {
+          id: 'maserati',
+          title: 'MASERATI',
+          subtitle: 'Single · Upcoming Release',
+          year: 2026,
+          status: 'upcoming',
+          coverUrl: '/images/cover-maserati.webp',
+          spotifyUrl: 'https://open.spotify.com/artist/6M1VSmwtcuwS1DnvXTGk7P',
+          appleMusicUrl: 'https://music.apple.com/us/artist/ashwin-azer/1497428225',
+          type: 'single'
+        },
+        {
+          id: 'neethaan-en-beat',
+          title: 'NEETHAAN EN BEAT',
+          subtitle: 'Ashwin Azer & Wynn Zariah',
+          year: 2026,
+          status: 'upcoming',
+          coverUrl: '/images/cover-neethaan-en-beat.webp',
+          spotifyUrl: 'https://open.spotify.com/artist/6M1VSmwtcuwS1DnvXTGk7P',
+          appleMusicUrl: 'https://music.apple.com/us/artist/ashwin-azer/1497428225',
+          type: 'single'
+        },
+        {
+          id: 'meth',
+          title: 'METH',
+          subtitle: 'Ashwin Azer & Wa\'Cali [Prod. EV]',
+          year: 2026,
+          status: 'upcoming',
+          coverUrl: '/images/cover-meth.webp',
+          spotifyUrl: 'https://open.spotify.com/artist/6M1VSmwtcuwS1DnvXTGk7P',
+          appleMusicUrl: 'https://music.apple.com/us/artist/ashwin-azer/1497428225',
+          type: 'single'
+        },
+        {
+          id: 'illuminaty',
+          title: 'ILLUMINATY',
+          subtitle: 'Ashwin Azer & Wa\'Cali',
+          year: 2026,
+          status: 'upcoming',
+          coverUrl: '/images/cover-illuminaty.webp',
+          spotifyUrl: 'https://open.spotify.com/artist/6M1VSmwtcuwS1DnvXTGk7P',
+          appleMusicUrl: 'https://music.apple.com/us/artist/ashwin-azer/1497428225',
+          type: 'single'
         }
       ],
       youtubeChannel: 'https://www.youtube.com/@ashwinazer',
@@ -135,10 +241,15 @@ export const lucidAshData: ArtistData = {
         { title: 'UYIRE ENNAI VITTU SENDRAYE', videoUrl: 'https://www.youtube.com/embed/-TCS0ohFOzc', description: 'The track that became a symbol of industry exploitation' }
       ],
       upcomingRelease: {
-        title: 'LEGENDS & LOVERS',
+        title: 'THE AZER (Vol. 2)',
         year: 2026,
-        description: 'The most ambitious project yet.',
-        type: 'album'
+        releaseDate: 'October 2, 2026',
+        trackCount: 16,
+        coverUrl: '/images/cover-the-azer-vol-2.webp',
+        description: '16 Tracks · Dropping October 2, 2026. The next definitive chapter in the Azer discography, following the released milestones Legends & Lovers and THE AZER (Vol. 1).',
+        type: 'album',
+        ctaText: 'PRESAVE / FOLLOW ON SPOTIFY',
+        presaveUrl: 'https://open.spotify.com/artist/6M1VSmwtcuwS1DnvXTGk7P'
       },
       featured: [
         {
@@ -151,43 +262,96 @@ export const lucidAshData: ArtistData = {
       ],
       latestAlbumEmbed: 'https://open.spotify.com/embed/album/4eipwaoJfbKEuwdZdaORQT?utm_source=generator&theme=0'
     },
+    awards: [
+      {
+        id: 'wallmag-rap-awards-2026',
+        title: 'WallMag Creator Awards · 2026',
+        event: 'WallMag Rap Awards 2026',
+        category: 'Music Creator Category',
+        achievement: 'Top 250 Creators (Rank #113)',
+        organization: 'WallMag Global Pvt Ltd (WallMag Magazine)',
+        year: 2026,
+        credentialId: 'WM-R113-kc2eoxbmpz1kuxf47k6skasy',
+        certificateUrl: '/images/wallmag-rap-awards-2026-certificate.webp',
+        certificatePngUrl: '/images/wallmag-rap-awards-2026-certificate.png',
+        pdfUrl: '/certificate_wallmag_rap_awards_2026.pdf',
+        verifyUrl: 'https://wallmag.io',
+        signatories: ['Sunil Sharma (Strategic Alliance, WallMag)', 'Ajeet Kumar Meena (Founder & CEO, WallMag)'],
+        description: 'Celebrated by WallMag\'s juries and creator community for ranking among the Top 250 creators of WallMag Rap Awards 2026 under the Music Creator Category.'
+      }
+    ],
     gallery: {
-      title: 'THE LOOK.',
+      title: 'THE LOOK & MEDIA',
       images: [
         {
-          url: '/images/hero-bg.webp',
+          url: '/images/cover-the-azer-vol-2.webp',
           span: 'md:col-span-2 md:row-span-2',
-          title: 'DESTINY ERA',
-          subtitle: 'The 2025 comeback visual',
-          era: 'MONADELTA SESSIONS'
+          title: 'THE AZER (VOL. 2)',
+          subtitle: 'Official Album Art · 16 Tracks · Oct 2, 2026',
+          era: 'UPCOMING 2026 LP'
         },
         {
-          url: '/images/sonic-frequencies.webp',
+          url: '/images/cover-maserati.webp',
           span: 'md:col-span-1 md:row-span-1',
-          title: 'SONIC FREQUENCIES',
-          subtitle: 'Studio sessions',
-          era: 'THE REBUILD'
+          title: 'MASERATI',
+          subtitle: 'Official Single Art',
+          era: 'CYBERPUNK ERA'
         },
         {
-          url: '/images/visual-narrative.webp',
+          url: '/images/cover-neethaan-en-beat.webp',
           span: 'md:col-span-1 md:row-span-1',
-          title: 'VISUAL NARRATIVE',
-          subtitle: 'Behind the lens',
-          era: 'THE ERASURE ERA'
+          title: 'NEETHAAN EN BEAT',
+          subtitle: 'Ashwin Azer & Wynn Zariah',
+          era: 'STUDIO SESSIONS'
+        },
+        {
+          url: '/images/cover-illuminaty.webp',
+          span: 'md:col-span-1 md:row-span-1',
+          title: 'ILLUMINATY',
+          subtitle: 'Ashwin Azer & Wa\'Cali',
+          era: 'MONADELTA VAULT'
+        },
+        {
+          url: '/images/cover-meth.webp',
+          span: 'md:col-span-1 md:row-span-1',
+          title: 'METH [PROD. EV]',
+          subtitle: 'Ashwin Azer & Wa\'Cali',
+          era: 'COLLAB CYPHER'
+        },
+        {
+          url: '/images/hero-bg.webp',
+          span: 'md:col-span-2 md:row-span-1',
+          title: 'AZER SESSIONS',
+          subtitle: 'Monadelta Soundstage',
+          era: 'THE COMEBACK'
         },
         {
           url: '/images/lucid-moments.webp',
-          span: 'md:col-span-2 md:row-span-1',
-          title: 'LUCID MOMENTS',
+          span: 'md:col-span-1 md:row-span-1',
+          title: 'LEGENDS & LOVERS ERA',
           subtitle: 'Between dreams and reality',
           era: 'LUCID FREQUENCIES'
         }
       ]
     },
     press: {
-      title: 'PRESS RELEASES',
-      description: 'Official announcements, press statements, and media releases from Ashwin Azer and MonaDelta.',
+      title: 'PRESS & ACCOLADES',
+      description: 'Official announcements, industry recognitions, and media releases from Ashwin Azer and MonaDelta.',
       releases: [
+        {
+          id: 'wallmag-award-and-azer-vol2-announcement',
+          title: 'Ashwin Azer Ranked in Top 250 at WallMag Rap Awards 2026; Slates 16-Track "THE AZER (Vol. 2)" for October 2 Release',
+          dateline: 'COIMBATORE, TAMIL NADU',
+          date: 'SEPTEMBER 2026',
+          summary: 'Following the successful arrival of "Legends & Lovers" and "THE AZER (Vol. 1)", independent producer and MonaDelta founder Ashwin Azer receives top honors from WallMag Magazine and readies his most expansive 16-track project.',
+          content: [
+            'Independent Indian R&B/Hip-Hop recording artist and music producer Ashwin Azer (Lucid ASH) has been officially named among the Top 250 Creators in the Music Creator Category at the prestigious WallMag Rap Awards 2026, presented by WallMag Global.',
+            'The honor comes on the heels of an unprecedented creative streak, marked by the recent release of his ambitious 2026 records "Legends & Lovers" and "THE AZER (Vol. 1)". Both projects have cemented his distinctive fusion of emotive Tamil lyricism, melodic trap, and atmospheric contemporary R&B.',
+            'Building on this milestone momentum, MonaDelta Productions officially confirms that Ashwin Azer\'s forthcoming full-length project, "THE AZER (Vol. 2)", is scheduled to drop worldwide on October 2, 2026. Featuring 16 brand-new tracks, the project represents his largest and most genre-defying sonic statement to date.',
+            'The verified WallMag award credential (ID: WM-R113-kc2eoxbmpz1kuxf47k6skasy) is archived on the MonaDelta portal, affirming Ashwin Azer\'s rise as one of the standout voices redefining independent music from South India.'
+          ],
+          tags: ['WALLMAG RAP AWARDS', 'TOP 250', 'THE AZER VOL 2', 'LEGENDS & LOVERS', 'OCTOBER 2 2026', 'MONADELTA']
+        },
         {
           id: 'monadelta-freedaw-announcement',
           title: 'Coimbatore-Based Artist and Producer Ashwin Azer (Lucid ASH) Redefines Independent Music with MonaDelta and Custom Audio Tech',
